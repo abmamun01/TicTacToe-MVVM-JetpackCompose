@@ -63,7 +63,7 @@ class GameViewModel : ViewModel() {
 
             if (checkForVictory(BoardCellValue.CIRCLE)) {
                 state = state.copy(
-                    hintText = "Player 'X' Won",
+                    hintText = "Player 'O' Won",
                     playerCircleCount = state.playerCircleCount + 1,
                     currentTurn = BoardCellValue.NONE,
                     hasWon = true
